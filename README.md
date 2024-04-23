@@ -72,11 +72,11 @@ def lambda_handler(event, context):
   "wrong_input_key" : "Hello, this is a wrong input key"
 }
 ```
-7. I executed the events in the following manner, after hitting execute.
+6. I executed the events in the following manner, after hitting execute.
 
 ![alt text](images/image-7.png)
 
-8. Then I checked the outputs and the pipelines. Here are the results for the input json.
+7. Then I checked the outputs and the pipelines. Here are the results for the input json.
 
 Positive Event:
 
