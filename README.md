@@ -27,7 +27,7 @@ For those not using the AWS Cloud 9 environment, the required setup will be inst
 
 ## Setup Instructions
 
-1. Deploy your Lambda functions. My [letter counter](https://gitlab.com/ers401S/cargo-lambda-aws-demo) was already completed, so I added this script to report an stdout message indicative of an error to the user. For the rest of the steps, we will continue to teach how to setup a workflow with step functions.
+1. Deploy your Lambda functions. My [letter counter](https://gitlab.com/ers401S/cargo-lambda-aws-demo) was already completed, so I added this script to report an stdout message indicative of an error to the user. For the rest of the steps, we will continue to teach how to setup a workflow with step functions. Super Tip :  Have all of your lambda functions in the same region, so your region specific workflows can find them. Make sure that your Workflow completed at the end, known as a state machine has enough Lambda privileges, as, in some cases, the AWSLambdaFullAccess is occassionally required to simplify access for small projects.
 ```
 import json
 
