@@ -53,6 +53,10 @@ def lambda_handler(event, context):
 
 ![alt text](images/image-3.png)
 
+When choosing your Lambdas, modify the function name under API parameters.
+
+![alt text](images/image-11.png)
+
 4. I gave all of the steps titles, but the issue was fixing the choice mechanism. The special trick, for my use case, was simply detecting if a payload had the key "input_string". If it did, follow the pipeline to the first lambda. If not, go to the second. for that, I modified the choice in the following manner. I simply checked if the "$.input_string" (in the format of $.key_in_payload) was "is present" in the payload.
 
 ![alt text](images/image-4.png)
